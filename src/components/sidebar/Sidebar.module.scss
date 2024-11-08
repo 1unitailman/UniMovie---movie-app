@@ -1,0 +1,25 @@
+//md, lg
+
+.sidebar {
+	@apply bg-stone-700 px-5 rounded-lg flex md:flex-row xl:flex-col items-center justify-between md:w-20 xl:w-48;
+}
+
+.menu {
+	@apply flex md:flex-row xl:flex-col md:items-center xl:items-start w-full
+}
+
+.heading {
+	@apply text-white text-xl mb-10
+}
+
+.nav_links {
+	@apply md:py-0 xl:py-4 flex md:flex-row xl:flex-col gap-5
+}
+
+.link_info {
+	@apply flex items-center gap-3 text-white
+}
+
+.link_info img {
+	width: 16px;
+}

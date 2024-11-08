@@ -5,15 +5,6 @@
 	"semi": false,
 	"singleQuote": true,
 	"jsxSingleQuote": true,
-	"importOrder": [
-		"<THIRD_PARTY_MODULES>",
-		"/hooks/",
-		"/screens/",
-		"/components/",
-		"^../(.*)",
-		"^./(.*)",
-		"/module.scss/"
-	],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true
 }
