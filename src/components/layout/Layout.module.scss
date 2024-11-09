@@ -1,7 +1,4 @@
-//md, lg
-
 .container {
-	// @apply bg-stone-800 flex md:flex-col lg:flex-row overflow-y-hidden text-white p-6 gap-3 h-screen;
-	@apply bg-stone-800 h-screen overflow-y-hidden text-white;
-	@apply md:flex md:flex-col md:p-6 md:gap-3
+	@apply bg-stone-800 flex flex-col h-screen text-white gap-3 p-6 overflow-y-hidden;
+	@apply md:flex-row md:overflow-y-hidden;
 }
