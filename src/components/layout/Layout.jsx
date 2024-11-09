@@ -5,7 +5,8 @@ const Layout = ({ children }) => {
 	return (
 		<div className={styles.container}>
 			<Sidebar />
-			<div className="w-full='true' overflow-y-scroll='true'">{children}</div>
+			{/* <div className="w-full overflow-y-scroll">{children}</div> */}
+			<div className="">{children}</div>
 		</div>
 	)
 }

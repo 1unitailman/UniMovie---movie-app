@@ -40,7 +40,7 @@ export const Sidebar = () => {
 					{navLinks.map((item) => (
 						<Link key={item.name} to={item.link}>
 							<div className={styles.link_info}>
-								<img src={item.icon} alt={item.name} />
+								<img className={styles.img} src={item.icon} alt={item.name} />
 								{item.name}
 							</div>
 						</Link>
