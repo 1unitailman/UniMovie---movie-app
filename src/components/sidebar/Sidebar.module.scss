@@ -1,8 +1,8 @@
 //md, lg
 
 .sidebar {
-	@apply bg-stone-700 p-2 rounded-lg flex flex-row w-full h-20 items-center justify-center;
-	@apply md:flex-row md:h-full md:w-40 md:items-baseline;
+	@apply bg-slate-800 p-2 rounded-lg flex flex-row w-full h-20 items-center justify-center;
+	@apply md:flex-row md:h-full md:w-48 md:items-baseline;
 }
 
 .heading {
@@ -12,13 +12,13 @@
 }
 
 .nav_links {
-	@apply flex w-full items-center;
-	@apply md:flex-col md:items-start;
+	@apply flex w-full items-center text-xs;
+	@apply md:flex-col md:items-start md:text-base;
 }
 
 .link_info {
 	@apply flex items-center p-1.5 gap-1 hover:text-stone-300 transition-all;
-	@apply md:gap-2;
+	@apply md:p-2 md:gap-2;
 }
 
 .img {

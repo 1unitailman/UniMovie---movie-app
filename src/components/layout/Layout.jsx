@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
 		<div className={styles.container}>
 			<Sidebar />
 			{/* <div className="w-full overflow-y-scroll">{children}</div> */}
-			<div className="">{children}</div>
+			<div className="w-full overflow-y-scroll">{children}</div>
 		</div>
 	)
 }
