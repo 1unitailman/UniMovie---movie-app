@@ -1,0 +1,11 @@
+.input_bar {
+    @apply p-1 flex items-center gap-3;
+}
+
+.input {
+    @apply rounded-lg border-none bg-slate-900 h-7 w-full p-4;
+}
+
+.search_icon {
+    @apply w-7 h-7 hover:opacity-90 cursor-pointer transition-all;
+}

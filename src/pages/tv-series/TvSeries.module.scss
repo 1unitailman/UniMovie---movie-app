@@ -1,0 +1,15 @@
+.tv_series_info {
+	@apply py-10 px-4;
+}
+
+.tv_series {
+	@apply grid grid-cols-4;
+}
+
+.movie_card {
+	@apply w-60 my-4 shadow-2xl;
+}
+
+.movie_card_img {
+	@apply rounded-xl hover:opacity-50 transition-all cursor-pointer mb-2;
+}
