@@ -26,5 +26,10 @@ export const router = createBrowserRouter([
 		path: '/tv-series',
 		element: <TvSeries />,
 		errorElement: <Error />
-	}
+	}, 
+	// {
+	// 	path: '/movie-info',
+	// 	element: <MovieInfo />,
+	// 	errorElement: <Error />
+	// }
 ])
