@@ -1,8 +1,13 @@
+import { useNavigate } from 'react-router-dom'
 import styles from '../../components/movie-list/trending-list/MovieTrendList.module.scss'
 
 export function MovieCard({ movie }) {
+	const navigate = useNavigate()
+
+	const handleClick = () => navigate(`/movie-info/${movie.id}`)
+
 	return (
-		<div className={styles.movie_card}>
+		<div className={styles.movie_card} onClick={handleClick}>
 			<div className={styles.image_container}>
 				<img
 					src={movie.thumbnail.regular.large}

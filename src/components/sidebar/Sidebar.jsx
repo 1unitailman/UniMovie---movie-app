@@ -19,11 +19,6 @@ const navLinks = [
 		link: '/movies'
 	},
 	{
-		name: 'Bookmark',
-		icon: bookmarkIcon,
-		link: '/bookmark'
-	},
-	{
 		name: 'Tv-Series',
 		icon: tvSeriesIcon,
 		link: '/tv-series'

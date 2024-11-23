@@ -1,7 +1,7 @@
 //md, lg
 
 .sidebar {
-	@apply bg-slate-800 p-2 rounded-lg flex flex-row w-full h-20 items-center justify-center;
+	@apply bg-slate-700 p-2 rounded-lg flex flex-row w-full h-20 items-center justify-center;
 	@apply md:flex-row md:h-full md:w-48 md:items-baseline;
 }
 

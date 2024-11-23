@@ -4,7 +4,9 @@ import { MovieCard } from '../../movie-card/MovieCard'
 import styles from './MovieRecommendedList.module.scss'
 
 export const MovieRecommendedList = () => {
-	const recommendedMovies = moviesData.filter((movie) => movie.isTrending === false)
+	const recommendedMovies = moviesData.filter(
+		(movie) => movie.isTrending === false
+	)
 
 	return (
 		<div className={styles.recommended_movies}>

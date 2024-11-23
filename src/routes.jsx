@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import Bookmark from './pages/bookmark/Bookmark'
+import MovieInfo from './components/movie-info/MovieInfo'
 import Error from './pages/error/Error'
 import Home from './pages/home/Home'
 import Movies from './pages/movies/Movies'
@@ -18,18 +18,13 @@ export const router = createBrowserRouter([
 		errorElement: <Error />
 	},
 	{
-		path: '/bookmark',
-		element: <Bookmark />,
-		errorElement: <Error />
-	},
-	{
 		path: '/tv-series',
 		element: <TvSeries />,
 		errorElement: <Error />
-	}, 
-	// {
-	// 	path: '/movie-info',
-	// 	element: <MovieInfo />,
-	// 	errorElement: <Error />
-	// }
+	},
+	{
+		path: '/movie-info/:id',
+		element: <MovieInfo />,
+		errorElement: <Error />
+	}
 ])

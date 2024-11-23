@@ -6,7 +6,6 @@
 	@apply w-60 my-4;
 }
 
-
 .movie_card_img {
 	@apply rounded-xl hover:opacity-50 transition-all cursor-pointer mb-2;
 }
@@ -24,13 +23,32 @@
 }
 
 .overlay_info {
-	@apply flex gap-3;
+	@apply flex gap-3 items-center;
 }
 
-.year, .category, .rating {
+.category{
+	@apply flex items-center gap-1
+}
+
+.year, .category_name, .rating {
     @apply text-xs;
 }
 
 .title {
     @apply text-lg;
+}
+
+.category_img img {
+	width: 12px;
+	height: 12px;
+	color: white;
+}
+
+.bookmark {
+	@apply cursor-pointer w-5 h-5 absolute top-3 right-3;
+}
+
+.bookmark img {
+	width: 20px;
+	height: 20px;
 }

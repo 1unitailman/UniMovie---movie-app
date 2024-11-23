@@ -1,0 +1,37 @@
+.info {
+	@apply p-5 flex items-start gap-5 ;
+}
+
+.info_main {
+	@apply flex-1  gap-5 my-8;
+}
+
+.arrowLeft {
+	@apply mx-5 h-10 w-10 cursor-pointer;
+}
+
+.arrow {
+	@apply w-full
+}
+
+.info_img {
+	@apply mt-5 flex justify-start w-1/2 ; 
+}
+
+.img {
+	@apply rounded-md w-full h-auto ;
+}
+
+.info_title {
+	@apply text-2xl m-0;
+}
+
+.info_year {
+	@apply text-xl;
+}
+
+.info_description {
+	@apply text-lg italic;
+}
+
+
