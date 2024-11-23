@@ -13,3 +13,7 @@
 .movie_card_img {
 	@apply rounded-xl hover:opacity-50 transition-all cursor-pointer mb-2;
 }
+
+.movie_list {
+	@apply grid grid-cols-4;
+}

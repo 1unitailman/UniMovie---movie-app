@@ -3,10 +3,11 @@ import styles from './Home.module.scss'
 
 import { useEffect, useState } from 'react'
 import { moviesData } from '../../assets/data.js'
-import { MovieCard } from '../../components/movie-card/MovieCard.jsx'
 import { MovieRecommendedList } from '../../components/movie-list/recommended-list/MovieRecommendedList.jsx'
 import { MovieTrendList } from '../../components/movie-list/trending-list/MovieTrendList.jsx'
 import { SearchBar } from '../../components/search-bar/SearchBar.jsx'
+import { SearchResult } from '../../components/search-result/SearchResult.jsx'
+import { searchMovies } from '../../services/movieSearch.service.js'
 
 const Home = () => {
 	const [search, setSearch] = useState('')
@@ -18,12 +19,7 @@ const Home = () => {
 	}
 
 	useEffect(() => {
-		const newFilteredMovies = moviesData.filter(
-			(movie) =>
-				movie.title.toLowerCase().includes(search) ||
-				movie.category.toLowerCase().includes(search)
-		)
-
+		const newFilteredMovies = searchMovies(moviesData, search)
 		setFilteredMovies(newFilteredMovies)
 	}, [search])
 
@@ -43,16 +39,7 @@ const Home = () => {
 						</div>
 					</>
 				) : (
-					<div className={styles.search_result}>
-						<h2 className={styles.search_text}>Search Result</h2>
-						<div className={styles.movie_list}>
-							{filteredMovies.length > 0 ? (
-								filteredMovies.map((movie) => <MovieCard movie={movie} key={movie.id}/>)
-							) : (
-								<p>No movies found for "{search}"</p>
-							)}
-						</div>
-					</div>
+					<SearchResult filteredMovies={filteredMovies} />
 				)}
 			</div>
 		</Layout>
